@@ -1,0 +1,12 @@
+def swapfile():
+    filename = input('Enter The File Name')
+    swaptext = input('Enter The Text You Want To Write In The File: ' + filename)
+    file = open(filename, 'r+')
+    file.seek(0)
+    file.truncate()
+    file.write(swaptext)
+    file.close()
+    print('The File Was Swapped Successfully')
+
+
+swapfile()
